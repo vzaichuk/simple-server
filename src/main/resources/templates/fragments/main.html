@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+  <head th:fragment="head">
+    <title>Server</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div th:fragment="container(main)" class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-8">
+          <div class="row my-3">
+            <div class="col-12">
+              <a href="/locations">Locations</a>
+            </div>
+          </div>
+          <div th:replace="${main}"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
